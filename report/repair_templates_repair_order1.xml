@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+<template id="report_repairorder_5">
+    <t t-call="web.basic_layout">
+        <t t-foreach="docs" t-as="o">
+     <link href="https://fonts.googleapis.com/css2?family=Teko" rel="stylesheet"/>
+          <div class="page">   
+           <t t-foreach="docs" t-as="o">
+             <div width="20%"/>
+             <div width="65%">
+               <div class="titulo">
+                  Hoja de Garantia
+                </div> 
+            <div align="center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif auto;padding:0 auto;font-size:22px;">
+                
+             <div align="center" style="margin:0 auto;padding:0 auto;font-size:13px;margin-top:8px;font-family: Helvetica;">
+                                   
+                                   <div style="font-size:14px;">
+                                     
+                          <h1 style="font-family:Teko;">ITHESK</h1>
+                            <t>
+                                Av.Las palmas #33 Plaza Berioska local 2a<br/>
+                            </t>
+                            <t>
+                                Tel:809-274-2666<br/>
+                            </t>
+                            <t>
+                                Email:info@ithesk.com<br/>
+                            </t>
+                            <t>
+                                Website: www.ithesk.com<br/>
+                            </t>
+                        </div>
+                                   <div align="center" style="margin-top:7px !important;">=======================<br/></div>
+                                   
+                                   
+                                   
+                                 </div>
+
+<table style="width:100%;margin-top:16px; font-family: Helvetica; border-top:1pt black;"> 
+
+<tr>
+ <td class="text-left">
+    Cliente:
+  </td>
+<td align="left">
+<strong t-field="o.partner_id"/>
+  </td>
+  </tr>
+  
+  <tr>
+ <td class="text-left">
+    Tel.:
+  </td>
+<td align="left">
+<strong t-esc="o.partner_id.phone"/>
+  </td>
+  </tr>
+  
+  <tr>
+ <td class="text-left">
+    Email:
+  </td>
+<td align="left">
+<strong t-esc="o.partner_id.email"/>
+  </td>
+  </tr>
+    
+  <tr>
+ <td class="text-left">
+    Fecha:
+  </td>
+<td align="left">
+<strong t-field="o.__last_update"/>
+  </td>
+  </tr>
+  
+</table>
+
+
+
+ <div align="center" style="margin-top:10px !important;">====================<br/></div>
+ 
+ 
+
+<table style="width:100%;font-family: Helvetica;">
+  
+    <tr>
+ <td class="text-left">
+    Equipo:
+  </td>
+<td align="left">
+<strong t-field="o.product_id.name"/>
+  </td>
+  </tr>
+  
+  
+      <tr>
+ <td class="text-left">
+    Imei o serie:
+  </td>
+<td align="left">
+<strong t-field="o.x_imei"/>
+  </td>
+  </tr>
+  
+  
+</table>
+
+<div align="center" style="margin-top:10px !important;">_________________<br/></div>
+
+<div align="center" style="margin-top:18px !important;">Vencimiento de Garantia</div>
+
+
+
+
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size:13px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+  
+}
+
+
+
+ .politica{
+   
+        font-family: 'Teko', sans-serif;
+      
+        font-size: 17px;
+        text-align: left;
+        width: 100%;
+
+
+   }
+   
+   
+    .titulo{
+     
+     font-family: font-family: 'Teko', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: right;
+        width: 30%;
+        color: white;
+        background-color: black;
+        position: relative;
+        right: 1px;
+        left: 210px;
+       
+     
+        
+   }
+   
+</style>
+
+   <table style="width:100%">
+     <tr>
+       <th>Producto</th>
+       <th>Vencimiento</th>
+     
+       
+      
+     
+      
+     </tr>
+     <tr>
+       <td><strong t-field="o.operations.product_id.name"/></td>
+       <td align="left"> 
+       <strong t-field="o.guarantee_limit"/>
+       </td>
+     
+       
+      
+       
+       
+       
+     </tr>
+     
+   
+     
+    
+    
+     
+    
+     
+   </table>
+
+<br/>
+
+<div t-if="o.x_imei" t-field="o.x_imei" t-options="{'widget': 'barcode', 'humanreadable': 1, 'width': 300, 'height': 80}"/>
+
+<div t-esc="o.name" t-field="o.name" t-options="{'widget': 'barcode', 'humanreadable': 1, 'width': 300, 'height': 100}"/>
+
+
+
+  <div class="politica">
+   
+    <br>Nuestras politicas de garantia a productos y servicios varian segun el tipo de producto y servicio. </br>   
+    <br>El vencimeinto de garantia esta especificado en la parte superior de este documento.</br>  
+    <br>Algunos productos en oferta no tienen garantia.</br>
+    <br>Los productos de software no tienen garantia.</br>
+    <br>Las pantallas con garantia originales solo aplica un 1 solo cambio en el tiempo especificado anteriormente.</br>
+    <br>No se devuelve dinero en efectivo solo cambios o notas de creditos</br>
+    <br>Debe presentar este documento para hacer efectiva la garantia</br>
+    <br>No se aceptan equipos mojados, golpeados, con sellos rotos o con evidencia de manipulacion</br>
+    <br>Las garantias se aplican al equipo instalado debe considir con el imei o serial del equipo</br>
+   
+
+  </div>
+
+ <p><i> <img src="/report/barcode/QR/www.ithesk.com/garantias" style="height:50px; width:50px;" alt="Barcode"/></i></p>  
+   
+ 
+
+             </div>
+             </div>
+              </t>
+          </div>
+          
+             
+
+        </t>
+    </t>
+          
+</template>
+
+<template id="report_repairorder5">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="doc">
+            <t t-call="repair.report_repairorder_5" t-lang="doc.partner_id.lang"/>
+        </t>
+    </t>
+</template>
+</data>
+</odoo>

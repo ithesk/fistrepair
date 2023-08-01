@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<odoo>
+
+    <!-- Inherint form view to modify -->
+<record id="repair_order_form_view_inherit" model="ir.ui.view">
+    <field name="name">repair.order.form.inherit</field>
+    <field name="model">repair.order</field>
+    <field name="inherit_id" ref="repair.view_repair_order_form"/>
+    <field name="arch" type="xml">
+       <field name="partner_id" position="after">
+          <field name = "imei" />
+        </field>
+    </field>
+</record>
+
+</odoo>

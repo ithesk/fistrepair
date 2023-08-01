@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+<template id="report_repairorder_6">
+    <t t-call="web.basic_layout">
+        <t t-foreach="docs" t-as="o">
+         
+         <style>
+    table, th, td {border:1px solid black;}
+    
+    
+    
+    
+    .cont{
+        background-color: hsla(205, 86%, 45%, 0);
+        height: 50vh;
+        margin: 5%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    p{
+        width: 50%;
+    }
+    
+    .logo{
+         background-color: black;
+         text-align: left;
+         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+         width: 170px; 
+         color: white;
+         position: absolute;
+         height: 20px;
+         top: 0px;
+         left: 500;
+         
+    } 
+    
+    .date{
+        text-align: left;
+        font-size: small;
+        top: 95px;
+        position: absolute;
+        width: 100%;
+    
+    }
+    
+    .datos{
+        text-align: left;
+        font-size: 0.7em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic;
+        text-decoration: underline;
+        font-style: oblique;
+        top: 21px;
+        position: absolute;
+    }
+    
+    .problem{
+        text-align: center;
+        font-size: small;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        top: 35px;
+        position: absolute;
+        width: 100%;
+        
+    }
+    
+    .pass{
+        text-align: center;
+        font-size: x-small;
+        font-style: normal;
+        top: 50px;
+        position: absolute;
+        width: 100%;
+    }
+    
+    .codigo{
+        align-items: center;
+        
+        width: 100%;
+        top: 65px;
+        position: absolute;
+       
+    
+    }
+    .tel {
+        text-align: left;
+        font-size: small;
+        top: 50px;
+        position: absolute;
+    }
+    
+    .estado{
+        background-color: black;
+        color: white;
+        position: absolute;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        left: 182px;
+        top: 0px;
+        width: 40px;
+        height: 22px;
+        
+    }
+    
+    .tablas{
+       top: 112px;
+       position: absolute; 
+       width: 180px;
+       text-align: left;
+    }
+    
+    .cod2{
+       top: 210px;
+       position: absolute; 
+       width: 100%;
+       text-align: center;
+    }
+    </style>
+    
+    <div class="label">
+    
+    <div class="estado"><t>A</t></div>   
+    
+    <div class="logo">
+    <t>ITHESK</t>
+        </div>
+    
+    
+    
+    <div class="datos">
+        <span t-field="o.partner_id"/>
+        <span t-field="o.partner_id.phone"/>
+    </div>
+    
+    <div class="problem">
+        <span t-field="o.description"/>
+    </div>
+    
+    
+    <div class="pass">
+        <span t-esc="o.x_clave"/>
+    </div>
+    
+    
+    
+    <div class="codigo">
+    
+     
+    <div t-field="o.name" t-options="{'widget': 'barcode', 'humanreadable': 1, 'width': 210, 'height': 35}"/>
+        
+    
+    
+    </div>
+    
+    <div class="date">
+    <span t-esc="datetime.datetime.now().strftime('%Y-%m-%d')" t-options="{'widget': 'date'}"/>
+    </div>
+    
+    </div>
+    
+    <div class="label">
+      <div class="tablas">
+    <table style="width:100% ">
+      <tr>
+       
+      </tr>
+      
+      <tr>
+        <td><div style="text-align: left; font-size: 0.6em">faceid</div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_faceid == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em">Wifi</div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_wifi == true"> ✔ </t></div></td>
+      </tr>
+      <tr>
+        <td><div style="text-align: left; font-size: 0.6em">CamaraT</div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_camaratr == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em">CamaraF</div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_camaraf == true"> ✔ </t></div></td>
+      </tr>
+       <tr>
+        <td><div style="text-align: left; font-size: 0.6em">Carga</div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_usb == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em">Botones</div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_botones == true"> ✔ </t></div></td>
+      </tr>
+       <tr>
+        <td><div style="text-align: left; font-size: 0.6em">Senal</div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_senal == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em">Touch</div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_touch == true"> ✔ </t></div></td>
+      </tr>
+       <tr>
+        <td><div style="text-align: left; font-size: 0.6em">Pantalla</div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_pantalla == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em">Sim</div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_tarjeta == true"> ✔ </t></div></td>
+      </tr>
+       <tr>
+        <td><div style="text-align: left; font-size: 0.6em">Panic</div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_panic == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em">Auricular</div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_auri == true"> ✔ </t></div></td>
+      </tr>
+       <tr>
+        <td><div style="text-align: left; font-size: 0.6em">Tornillos</div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_tornillo == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em">Bocinas</div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_bocina == true"> ✔ </t></div></td>
+      </tr>
+    </table>
+    </div>
+       </div>
+        </t>
+      <div class="cod2">
+        <div style="text-align: center; font-size: 0.5em" t-field="o.name" t-options="{'widget': 'barcode', 'humanreadable': 1, 'width': 200, 'height': 30}"/>
+        </div>
+      </t>
+</template>
+
+<template id="report_repairorder_5">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="doc">
+            <t t-call="repair.report_repairorder_6" t-lang="doc.partner_id.lang"/>
+        </t>
+    </t>
+</template>
+</data>
+</odoo>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+<template id="report_repairorder1">
+   
+  <t t-call="web.basic_layout">
+    <t t-foreach="docs" t-as="o">
+     <link href="https://fonts.googleapis.com/css2?family=Teko" rel="stylesheet"/>
+      <div class="page">   
+       <t t-foreach="docs" t-as="o">
+         <div width="20%"/>
+         <div width="65%"> 
+             <div class="titulo">
+                 Hoja de Entrada
+               </div> 
+         <div align="center" style="margin:10 auto;padding:0 auto;font-size:18px">
+       
+         <div align="center" style="margin:0 auto;padding:0 auto;font-size:13px;margin-top:8px;font-family: Helvetica;">
+                               
+                               <div style="font-size:14px;">
+                                 
+                                 <h1 style="font-family:Teko; font-size: 40px;">ITHESK</h1>
+                        <t>
+                            Av.Las palmas #33 Plaza Berioska local 2a<br/>
+                        </t>
+                        <t>
+                            Tel:809-274-2666<br/>
+                        </t>
+                        <t>
+                            Email:info@ithesk.com<br/>
+                        </t>
+                        <t>
+                            Website: www.ithesk.com<br/>
+                        </t>
+                    </div>
+                               <div align="center" style="margin-top:7px !important;">==========================<br/></div>
+                               
+                               
+                               
+                             </div>
+
+<table style="width:100%;margin-top:16px; font-family: Helvetica; border-top:1pt black;"> 
+
+<tr>
+<td class="text-left">
+Cliente:
+</td>
+<td align="left">
+<strong t-field="o.partner_id"/>
+</td>
+</tr>
+
+<tr>
+<td class="text-left">
+Tel.:
+</td>
+<td align="left">
+<strong t-esc="o.partner_id.phone"/>
+</td>
+</tr>
+
+<tr>
+<td class="text-left">
+Email:
+</td>
+<td align="left">
+<strong t-esc="o.partner_id.email"/>
+</td>
+</tr>
+
+<tr>
+<td class="text-left">
+Fecha:
+</td>
+<td align="left">
+<strong t-field="o.__last_update"/>
+</td>
+</tr>
+
+</table>
+
+
+
+<div align="center" style="margin-top:10px !important;">==========================<br/></div>
+
+
+
+<table style="width:100%;font-family: Helvetica;">
+
+<tr>
+<td class="text-left">
+Equipo:
+</td>
+<td align="left">
+<strong t-field="o.product_id.name"/>
+</td>
+</tr>
+
+
+  <tr>
+<td class="text-left">
+Imei o serie:
+</td>
+<td align="left">
+<strong t-field="o.imei"/>
+</td>
+</tr>
+
+
+
+    <tr>
+<td class="text-left">
+Problema:
+</td>
+<td align="left font-size:8px;">
+<strong t-field="o.description"/>
+</td>
+</tr>
+
+     <tr>
+<td class="text-left">
+Bateria:
+</td>
+<td align="left">
+<strong t-field="o.battery"/>% vida</td>
+</tr>
+
+</table>
+
+<div align="center" style="margin-top:10px !important;">_____________________________<br/></div>
+
+<div align="center" style="margin-top:10px !important;">Test Funciones</div>
+
+
+
+
+
+<style>
+
+.page{
+  width: 72mm;
+
+}
+
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+font-size:13px;
+}
+
+tr:nth-child(even) {
+background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+background-color: rgba(150, 212, 212, 0.4);
+}
+
+
+.titulo{
+ 
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+    width: 30%;
+    color: white;
+    background-color: black;
+    position: relative;
+    right: 1px;
+    left: 210px;
+}
+
+
+
+</style>
+
+<table style="width:100%">
+<tr>
+<th>Funcion</th>
+<th>Estado</th>
+<th>Funcion</th>
+<th>Estado</th>
+
+
+
+
+</tr>
+<tr>
+<td>Faceid/H</td>
+<td align="left"> 
+<t t-if="o.faceid == true"> OK </t></td>
+<td>WIFI</td>
+<td align="left"> 
+<t t-if="o.wifi == true"> OK </t></td>
+
+
+
+
+</tr>
+<tr>
+
+<td>CamaraT.</td>
+<td align="left"> 
+<t t-if="o.camera == true"> OK </t></td>
+<td>CamaraF</td>
+<td align="left"> 
+<t t-if="o.camerafront == true"> OK </t></td>
+
+
+
+</tr>
+<tr>
+<td>USB/Carga</td>
+<td align="leftt"> 
+<t t-if="o.charging == true"> OK </t></td>
+<td>Botones</td>
+<td align="left"> 
+<t t-if="o.buttons == true"> OK </t></td>
+
+
+</tr>
+<tr>
+<td>Senal</td>
+<td align="leftt"> 
+<t t-if="o.signal == true"> OK </t></td>
+<td>Touch</td>
+<td align="left"> 
+<t t-if="o.touch == true"> OK </t></td>
+
+
+</tr>
+<tr>
+<td>Pantalla</td>
+<td align="left"> 
+<t t-if="o.screen == true"> OK </t></td>
+<td>Sim/m</td>
+<td align="left"> 
+<t t-if="o.sim == true"> OK </t></td>
+
+
+</tr>
+<tr>
+<td>PanicFull</td>
+<td align="left"> 
+<t t-if="o.panic == true"> OK </t></td>
+<td>Microfono</td>
+<td align="left"> 
+<t t-if="o.microphone == true"> OK </t></td>
+
+
+</tr>
+
+<tr>
+<td>Tornillo</td>
+<td align="left"> 
+<t t-if="o.screw == true"> OK </t></td>
+<td>Bocina</td>
+<td align="left"> 
+<t t-if="o.speaker == true"> OK </t></td>
+
+
+</tr>
+
+</table>
+
+<br/>
+
+<div t-if="o.imei" t-field="o.imei" t-options="{'widget': 'barcode', 'humanreadable': 1, 'width': 300, 'height': 80}"/>
+
+<div t-esc="o.name" t-field="o.name" t-options="{'widget': 'barcode', 'humanreadable': 1, 'width': 300, 'height': 100}"/>
+
+<div align="center">
+
+<div t-if="o.internal_notes">
+  
+<img t-att-src="'/report/barcode/QR/'+o.internal_notes" style="height:150px; width:150px;" alt="Barcode"/>
+</div>
+
+</div>
+
+
+
+<div align="center" style="font-size:12px;">  
+
+<p><i>EL Cliente reconoce que las funciones no probadas por nuestros tecnicos, no podemos garantizar su funcionamiento</i></p>
+<p><i>Ithesk No es responsables a equipos abandonados despues de 45 dias calendarios</i></p>
+<p><i> <img src="/report/barcode/QR/www.ithesk.com/garantias" style="height:50px; width:50px;" alt="Barcode"/></i></p>     
+<div align="center" style="font-size:11px;">Garantias</div>
+
+
+
+
+
+<br/></div>
+
+         </div>
+         </div>
+          </t>
+      </div>
+      
+         
+
+    </t>
+</t>
+
+  
+</template>
+
+<template id="fistrepair.report_repairorder3">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="doc">
+            <t t-call="fistrepair.report_repairorder1" t-lang="doc.partner_id.lang"/>
+        </t>
+    </t>
+</template>
+</data>
+</odoo>
