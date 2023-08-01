@@ -5,8 +5,8 @@
             <field name="name">Label/Etiqueta</field>
             <field name="model">repair.order</field>
             <field name="report_type">qweb-pdf</field>
-            <field name="report_name">repair.report_repairorder6</field>
-            <field name="report_file">repair.report_repairorder_6</field>
+            <field name="report_name">fistrepair.report_repairorder6</field>
+            <field name="report_file">fistrepair.report_repairorder_6</field>
            
             <field name="print_report_name">(
                 object.state == 'draft' and 'Repair Quotation - %s' % (object.name) or
