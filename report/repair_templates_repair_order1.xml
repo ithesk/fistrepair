@@ -101,7 +101,7 @@
     Imei o serie:
   </td>
 <td align="left">
-<strong t-field="o.x_imei"/>
+<strong t-field="o.imei"/>
   </td>
   </tr>
   
@@ -199,7 +199,7 @@ th:nth-child(even),td:nth-child(even) {
 
 <br/>
 
-<div t-if="o.x_imei" t-field="o.x_imei" t-options="{'widget': 'barcode', 'humanreadable': 1, 'width': 300, 'height': 80}"/>
+<div t-if="o.imei" t-field="o.imei" t-options="{'widget': 'barcode', 'humanreadable': 1, 'width': 300, 'height': 80}"/>
 
 <div t-esc="o.name" t-field="o.name" t-options="{'widget': 'barcode', 'humanreadable': 1, 'width': 300, 'height': 100}"/>
 
