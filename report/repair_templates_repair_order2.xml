@@ -144,7 +144,7 @@
     
     
     <div class="pass">
-        <span t-esc="o.x_clave"/>
+        <span t-esc="o.passcode"/>
     </div>
     
     
@@ -173,45 +173,45 @@
       
       <tr>
         <td><div style="text-align: left; font-size: 0.6em">faceid</div></td>
-        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_faceid == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.faceid == true"> ✔ </t></div></td>
         <td><div style="text-align: left; font-size: 0.6em">Wifi</div></td>
-        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_wifi == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.wifi == true"> ✔ </t></div></td>
       </tr>
       <tr>
         <td><div style="text-align: left; font-size: 0.6em">CamaraT</div></td>
-        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_camaratr == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.camera == true"> ✔ </t></div></td>
         <td><div style="text-align: left; font-size: 0.6em">CamaraF</div></td>
-        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_camaraf == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.camerafront == true"> ✔ </t></div></td>
       </tr>
        <tr>
         <td><div style="text-align: left; font-size: 0.6em">Carga</div></td>
-        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_usb == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.charging == true"> ✔ </t></div></td>
         <td><div style="text-align: left; font-size: 0.6em">Botones</div></td>
-        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_botones == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.buttons == true"> ✔ </t></div></td>
       </tr>
        <tr>
         <td><div style="text-align: left; font-size: 0.6em">Senal</div></td>
-        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_senal == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.signal == true"> ✔ </t></div></td>
         <td><div style="text-align: left; font-size: 0.6em">Touch</div></td>
-        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_touch == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.touch == true"> ✔ </t></div></td>
       </tr>
        <tr>
         <td><div style="text-align: left; font-size: 0.6em">Pantalla</div></td>
-        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_pantalla == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.screen == true"> ✔ </t></div></td>
         <td><div style="text-align: left; font-size: 0.6em">Sim</div></td>
-        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_tarjeta == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.sim == true"> ✔ </t></div></td>
       </tr>
        <tr>
         <td><div style="text-align: left; font-size: 0.6em">Panic</div></td>
-        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_panic == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.panic == true"> ✔ </t></div></td>
         <td><div style="text-align: left; font-size: 0.6em">Auricular</div></td>
-        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_auri == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.microphone == true"> ✔ </t></div></td>
       </tr>
        <tr>
         <td><div style="text-align: left; font-size: 0.6em">Tornillos</div></td>
-        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_tornillo == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.screw == true"> ✔ </t></div></td>
         <td><div style="text-align: left; font-size: 0.6em">Bocinas</div></td>
-        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.x_bocina == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.speaker == true"> ✔ </t></div></td>
       </tr>
     </table>
     </div>
@@ -223,7 +223,7 @@
       </t>
 </template>
 
-<template id="fistrepair.report_repairorder_5">
+<template id="fistrepair.report_repairorder6">
     <t t-call="web.html_container">
         <t t-foreach="docs" t-as="doc">
             <t t-call="fistrepair.report_repairorder_6" t-lang="doc.partner_id.lang"/>
