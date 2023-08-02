@@ -25,6 +25,7 @@ class RepairP(models.Model):
     camerafront = fields.Boolean(string='Front Camera')
     panic = fields.Boolean(string='Panic')
     screw = fields.Boolean(string='Screw')
+    earphone = fields.Boolean(string='Earphone')
     
     # states = fields.Selection([('draft', 'Draft'), ('confirmed', 'Confirmed'), ('under_repair', 'Under Repair'), ('ready', 'Ready to Repair'), ('done', 'Repaired'), ('cancel', 'Cancelled')], string='State', readonly=True, default='draft', copy=False, track_visibility='onchange')
     done = fields.Boolean(string='Done')

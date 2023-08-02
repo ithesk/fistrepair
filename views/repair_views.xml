@@ -7,9 +7,35 @@
     <field name="model">repair.order</field>
     <field name="inherit_id" ref="repair.view_repair_order_form"/>
     <field name="arch" type="xml">
+
        <field name="partner_id" position="after">
           <field name = "imei" />
+          <field name = "passcode" />
         </field>
+
+        <field name = "picking_id" position="after"> 
+          <field name = "faceid" />
+            <field name = "signal" />
+            <field name = "wifi" />
+            <field name = "screen" />
+            <field name = "touch" />
+            <field name = "camera" />
+            <field name = "microphone" />
+            <field name = "speaker" />
+        </field>
+
+        <field name = "tag_ids" position="after"> 
+            <field name = "battery"/>
+            <field name = "battery" widget="percentpie"/>
+            <field name = "charging" />
+            <field name = "buttons" />
+            <field name = "panic" />
+            <field name = "screw" />
+            <field name = "earphone" />
+            <field name = "sim" />
+            <field name = "statecell"/>
+    </field>
+
     </field>
 </record>
 
