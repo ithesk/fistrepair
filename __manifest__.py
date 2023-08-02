@@ -5,7 +5,7 @@
 
 {
     'name': 'fistrepair',
-    'version': '16.0.2.0.2',
+    'version': '16.0.2.0.3',
     'author': 'Pablo holguin',
     'maintainer': 'Pablo holguin',
     'website': 'http://www.ithesk.com',
