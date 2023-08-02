@@ -22,5 +22,5 @@
       'report/repair_templates_repair_order2.xml',
       'report/repair_templates_repair_order.xml',     
     ],
-    'images': ['static/description/banner.png'],
+    'images': ['static/description/icon.png'],
 }
