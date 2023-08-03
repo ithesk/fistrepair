@@ -26,6 +26,8 @@ class RepairP(models.Model):
     panic = fields.Boolean(string='Panic')
     screw = fields.Boolean(string='Screw')
     earphone = fields.Boolean(string='Earphone')
+
+    partner1_phone = fields.Char(string='Phone', related='partner_id.phone')
     
     # states = fields.Selection([('draft', 'Draft'), ('confirmed', 'Confirmed'), ('under_repair', 'Under Repair'), ('ready', 'Ready to Repair'), ('done', 'Repaired'), ('cancel', 'Cancelled')], string='State', readonly=True, default='draft', copy=False, track_visibility='onchange')
     done = fields.Boolean(string='Done')
@@ -34,3 +36,5 @@ class RepairP(models.Model):
                                  selection=[('in', 'In'), ('out', 'Out')]
                                  
                                  )
+    
+   
