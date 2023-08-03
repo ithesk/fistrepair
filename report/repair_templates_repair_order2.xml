@@ -6,6 +6,13 @@
         <t t-foreach="docs" t-as="o">
          
          <style>
+
+    .label{
+     width: 100%;
+     high: 38mm;
+     padding: 1mm;
+    }
+
     table, th, td {border:1px solid black;}
     
     
@@ -162,9 +169,9 @@
     <span t-esc="datetime.datetime.now().strftime('%Y-%m-%d')" t-options="{'widget': 'date'}"/>
     </div>
     
-    </div>
+   
     
-    <div class="label">
+    
       <div class="tablas">
     <table style="width:100% ">
       <tr>

@@ -11,6 +11,7 @@
                 object.state == 'draft' and 'Repair Quotation - %s' % (object.name) or
                 'Repair Order - %s' % (object.name))</field>
             <field name="binding_model_id" ref="model_repair_order"/>
+            <field name="paperformat_id" ref="paperformat_pos_sheet_fist" />
             <field name="binding_type">report</field>
         </record>
     </data>

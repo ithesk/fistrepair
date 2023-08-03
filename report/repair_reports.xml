@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+       
+        <record id="paperformat_pos_sheet_fist" model="report.paperformat">
+            <field name="name">Print pos</field>
+            <field name="format">custom</field>
+            <field name="page_height">297</field>
+            <field name="page_width">76</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">0</field>
+            <field name="margin_bottom">0</field>
+            <field name="margin_left">0</field>
+            <field name="margin_right">4.80</field>
+            <field name="header_spacing">5</field>
+            <field name="disable_shrinking">False</field>
+            <field name="dpi">90</field>
+        </record>
+
+
         <record id="action_report_repair_order" model="ir.actions.report">
             <field name="name">Entrada/T20</field>
             <field name="model">repair.order</field>
@@ -11,6 +28,7 @@
                 object.state == 'draft' and 'Repair Quotation - %s' % (object.name) or
                 'Repair Order - %s' % (object.name))</field>
             <field name="binding_model_id" ref="model_repair_order"/>
+            <field name="paperformat_id" ref="paperformat_pos_sheet_fist" />
             <field name="binding_type">report</field>
         </record>
     </data>

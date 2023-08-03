@@ -14,6 +14,8 @@
           <field name = "passcode" />
         </field>
 
+        <field name="location_id" position="replace" />   <!-- eliminar campos de la vista -->
+
         <field name = "picking_id" position="after"> 
           <field name = "faceid" />
             <field name = "signal" />
