@@ -28,6 +28,12 @@ class RepairP(models.Model):
     earphone = fields.Boolean(string='Earphone')
 
     partner1_phone = fields.Char(string='Phone', related='partner_id.phone')
+    company_phone = fields.Char(string='Phone', related='company_id.phone')
+    partner1_email = fields.Char(string='Email', related='company_id.email')
+    company_name = fields.Char(string='Company', related='company_id.name')
+    address = fields.Char(string='Address', related='company_id.street')
+    website1 = fields.Char(string='Website', related='company_id.website')
+    
     
     # states = fields.Selection([('draft', 'Draft'), ('confirmed', 'Confirmed'), ('under_repair', 'Under Repair'), ('ready', 'Ready to Repair'), ('done', 'Repaired'), ('cancel', 'Cancelled')], string='State', readonly=True, default='draft', copy=False, track_visibility='onchange')
     done = fields.Boolean(string='Done')

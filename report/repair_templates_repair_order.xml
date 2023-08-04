@@ -19,18 +19,18 @@
                                
                                <div style="font-size:14px;">
                                  
-                                 <h1 style="font-family:Teko; font-size: 40px;">ITHESK</h1>
+                                 <h1 style="font-family:Teko; font-size: 40px;"> <strong t-esc="o.company_name"/> </h1>
                         <t>
-                            Av.Las palmas #33 Plaza Berioska local 2a<br/>
+                            <strong t-esc="o.address"/><br/>
                         </t>
                         <t>
-                            Tel:809-274-2666<br/>
+                            <strong t-esc="o.company_phone"/><br/>
                         </t>
                         <t>
-                            Email:info@ithesk.com<br/>
+                            <strong t-esc="o.partner1_email"/><br/>
                         </t>
                         <t>
-                            Website: www.ithesk.com<br/>
+                            <strong t-esc="o.website1"/><br/>
                         </t>
                     </div>
                                <div align="center" style="margin-top:7px !important;">==========================<br/></div>
