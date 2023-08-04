@@ -7,11 +7,6 @@
          
          <style>
 
-    .label{
-     width: 100%;
-     high: 38mm;
-     padding: 1mm;
-    }
 
     table, th, td {border:1px solid black;}
     
@@ -49,7 +44,7 @@
     .date{
         text-align: left;
         font-size: small;
-        top: 95px;
+        top: 100px;
         position: absolute;
         width: 100%;
     
@@ -116,14 +111,14 @@
     }
     
     .tablas{
-       top: 112px;
+       top: 150px;
        position: absolute; 
        width: 180px;
        text-align: left;
     }
     
     .cod2{
-       top: 210px;
+       top: 250px;
        position: absolute; 
        width: 100%;
        text-align: center;
