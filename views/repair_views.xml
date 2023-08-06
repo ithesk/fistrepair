@@ -14,6 +14,14 @@
           <field name = "passcode" />
         </field>
 
+        <field name="description" position="replace">
+            <field name="description" required="1"/>       <!-- campo requerido -->
+        </field>
+
+        <field name="partner_id" position="replace">
+          <field name="partner_id" required="1"/>       <!-- campo requerido -->
+      </field>
+
         <field name="location_id" position="replace" />   <!-- eliminar campos de la vista -->
 
         <field name = "picking_id" position="after"> 
