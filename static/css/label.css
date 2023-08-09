@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+
+.label{
+   width: 38mm;
+   padding: 0px;
+}
+hr {
+    height: 3px;
+    background-color: black;
+    
+}
+
+.circulo {
+  position: relative;
+  
+  right: 40%;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: black;
+
+}
+
+.circuloletra{
+    position: relative;
+    right: 1%;
+    left: 40%;
+    top: 5%;
+    height: 30px;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+.parner{
+    position: relative;
+    right: 4%;
+    width: 30px;
+    height: 4px;
+    margin: 0 auto;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    line-height: 90%;
+   
+    
+}
+
+.tel{
+    position: relative;
+    right: 4%;
+    width: 100px;
+    height: 13px;
+    margin: 0 auto;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+
+}
+.password{
+    position: relative;
+    right: 4%;
+    top: 50%;
+    width: 100px;
+    height: 12px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+
+.problem{
+    position: relative;
+    right: 4%;
+    width: 100px;
+    height: 20px;
+    margin: 0 auto;
+    text-align: left;
+  
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 90%;
+}
