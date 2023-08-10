@@ -23,4 +23,5 @@
       'report/repair_templates_repair_order.xml',     
     ],
     'images': ['static/description/icon.png'],
+    'images': ['static/img/logolabel.png'],
 }
