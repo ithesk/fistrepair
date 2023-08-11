@@ -6,7 +6,7 @@ from odoo import api, fields, models
 
 class RepairP(models.Model):
     _inherit = 'repair.order'
-    imei = fields.Char(string='IMEI')
+    imei = fields.Char(string='IMEI SN')
     serial = fields.Char(string='Serial')
     passcode = fields.Char(string='Passcode')
     battery = fields.Integer(string='Battery')
