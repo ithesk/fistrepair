@@ -63,8 +63,6 @@ class RepairP(models.Model):
                 sum += 1
             if record.sim:
                 sum += 1
-            if record.sd:
-                sum += 1
             if record.camerafront:
                 sum += 1
             if record.panic:
@@ -74,14 +72,16 @@ class RepairP(models.Model):
             if record.earphone:
                 sum += 1
             if record.flash:
-                sum += 1
-            if sum == 17:
+                sum += 1  
+            if sum == 16:
+                record.evaluation = "2/10 Se Reinicia"    
+            if sum == 15:
                 record.evaluation = "10/10 NITIDO"
-            elif sum >= 12:
+            elif sum >= 13:
                 record.evaluation = "8/10 TA BUENO"
-            elif sum >= 8:
+            elif sum >= 9:
                 record.evaluation = "5/10 HAY"
-            elif sum >= 4:
+            elif sum >= 5:
                 record.evaluation = "3/10 REGULAR"
             else:
                 record.evaluation = "1/10 Maco"

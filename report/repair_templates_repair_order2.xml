@@ -120,6 +120,12 @@
         <td><div style="text-align: left; font-size: 0.6em">Bocinas</div></td>
         <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.speaker == true"> ✔ </t></div></td>
       </tr>
+      <tr>
+        <td><div style="text-align: left; font-size: 0.6em">Flash</div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.flash == true"> ✔ </t></div></td>
+        <td><div style="text-align: left; font-size: 0.6em">Microfono</div></td>
+        <td><div style="text-align: left; font-size: 0.6em"><t t-if="o.microphone == true"> ✔ </t></div></td>
+      </tr>
     </table>
     </div>
        </div>
