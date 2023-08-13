@@ -35,7 +35,12 @@ class RepairP(models.Model):
     address = fields.Char(string='Address', related='company_id.street')
     website1 = fields.Char(string='Website', related='company_id.website')
     condition = fields.Char(string='Condition')
+    classific = fields.Char(compute="_compute_classific", string='Classific')
     evaluation = fields.Char(compute="_compute_evaluation", string='Evaluation')
+    typerepair = fields.Selection([('cell', 'Cell'),
+                                   ('tablet', 'Tablet'),
+                                   ('smartwatch', 'SmartWatch'),
+                                    ], string='Type Repair', default="cell")
 
     @api.depends('faceid', 'wifi', 'signal', 'screen', 'camera', 'speaker', 'microphone', 'charging', 'buttons', 'touch', 'sim', 'sd', 'camerafront', 'panic', 'screw', 'earphone', 'flash')
     def _compute_evaluation(self):
@@ -86,8 +91,22 @@ class RepairP(models.Model):
             else:
                 record.evaluation = "1/10 Maco"
         
-
-
+    
+    
+    @api.depends('typerepair')
+    def _compute_classific(self):
+        for record in self:
+            if record.typerepair == "cell":
+                record.classific = "C"
+            elif record.typerepair == "tablet":
+                record.classific = "T"
+            elif record.typerepair == "smartwatch":
+                record.classific = "S"
+            else:
+                record.classific = "A"
+                              
+            
+            
     
 
 

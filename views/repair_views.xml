@@ -8,12 +8,20 @@
     <field name="inherit_id" ref="repair.view_repair_order_form"/>
     <field name="arch" type="xml">
 
+      <field name="description" position="before">
+        <field name = "typerepair"/>
+    </field>  
 
        <field name="partner_id" position="after">
           <field name="partner1_phone" />
           <field name ="imei" required="1"/>
           <field name = "passcode" />
+          
         </field>
+
+        <field name="partner_id" position="replace">
+        <field name="partner_id" widget="res_partner_many2one" attrs="{'required':[('invoice_method','!=','none')]}" context="{'res_partner_search_mode': 'customer','phone' 'show_vat': True}"/>
+         </field>
 
         <field name="description" position="replace">
             <field name="description" required="1"/>       <!-- campo requerido -->

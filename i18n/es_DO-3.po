@@ -1,0 +1,541 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fistrepair
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20230720\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-13 13:24+0000\n"
+"PO-Revision-Date: 2023-08-13 09:32-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "% vida"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.actions.report,print_report_name:fistrepair.action_report_repair_order
+#: model:ir.actions.report,print_report_name:fistrepair.action_report_repair_order1
+#: model:ir.actions.report,print_report_name:fistrepair.action_report_repair_order2
+msgid ""
+"(\n"
+"                object.state == 'draft' and 'Repair Quotation - %s' % (object.name) or\n"
+"                'Repair Order - %s' % (object.name))"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid ""
+"<br>Nuestras politicas de garantia a productos y servicios varian segun el tipo de producto y "
+"servicio. </br>   \n"
+"    <br>El vencimeinto de garantia esta especificado en la parte superior de este documento.</br>  \n"
+"    <br>Algunos productos en oferta no tienen garantia.</br>\n"
+"    <br>Los productos de software no tienen garantia.</br>\n"
+"    <br>Las pantallas con garantia originales solo aplica un 1 solo cambio en el tiempo especificado "
+"anteriormente.</br>\n"
+"    <br>No se devuelve dinero en efectivo solo cambios o notas de creditos</br>\n"
+"    <br>Debe presentar este documento para hacer efectiva la garantia</br>\n"
+"    <br>No se aceptan equipos mojados, golpeados, con sellos rotos o con evidencia de manipulacion</"
+"br>\n"
+"    <br>Las garantias se aplican al equipo instalado debe considir con el imei o serial del equipo</br>"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid ""
+"<i>EL Cliente reconoce que las funciones no probadas por nuestros tecnicos, no podemos garantizar su "
+"funcionamiento</i>"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "<i>Ithesk No es responsables a equipos abandonados despues de 45 dias calendarios</i>"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "====================<br/>"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "=======================<br/>"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "==========================<br/>"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__address
+msgid "Address"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "Auricular"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "Av.Las palmas #33 Plaza Berioska local 2a<br/>"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "Barcode"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "Bateria:"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__battery
+msgid "Battery"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "Bocina"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "Bocinas"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "Botones"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__buttons
+msgid "Buttons"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "CamaraF"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "CamaraT"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "CamaraT."
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__camera
+msgid "Camera"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "Carga"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields.selection,name:fistrepair.selection__repair_order__typerepair__cell
+msgid "Cell"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__charging
+msgid "Charging"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__classific
+msgid "Classific"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "Cliente:"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__company_name
+msgid "Company"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__condition
+msgid "Condition"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model,name:fistrepair.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__done
+msgid "Done"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__earphone
+msgid "Earphone"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__partner1_email
+msgid "Email"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "Email:"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "Email:info@ithesk.com<br/>"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.actions.report,name:fistrepair.action_report_repair_order
+msgid "Entrada/T20"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "Equipo:"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "Estado"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__evaluation
+msgid "Evaluation"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__faceid
+msgid "Face ID"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "Faceid/H"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "Fecha:"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__flash
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "Flash"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__camerafront
+msgid "Front Camera"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "Funcion"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.actions.report,name:fistrepair.action_report_repair_order1
+msgid "Garantia/Pos"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "Garantias"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "Hoja de Entrada"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "Hoja de Garantia"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__imei
+msgid "IMEI SN"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "ITHESK"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "Imei o serie:"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields.selection,name:fistrepair.selection__repair_order__statecell__in
+msgid "In"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.actions.report,name:fistrepair.action_report_repair_order2
+msgid "Label/Etiqueta"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "Microfono"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__microphone
+msgid "Microphone"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "OK"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields.selection,name:fistrepair.selection__repair_order__statecell__out
+msgid "Out"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__panic
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "Panic"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "PanicFull"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "Pantalla"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__passcode
+msgid "Passcode"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__company_phone
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__partner1_phone
+msgid "Phone"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "Problema:"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "Producto"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model,name:fistrepair.model_repair_order
+msgid "Repair Order"
+msgstr "Orden de reparación"
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__sd
+msgid "SD"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__sim
+msgid "SIM"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__screen
+msgid "Screen"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__screw
+msgid "Screw"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "Senal"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__serial
+msgid "Serial"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__signal
+msgid "Signal"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "Sim"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "Sim/m"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields.selection,name:fistrepair.selection__repair_order__typerepair__smartwatch
+msgid "SmartWatch"
+msgstr "Relog"
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__speaker
+msgid "Speaker"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__statecell
+msgid "State equipment"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields.selection,name:fistrepair.selection__repair_order__typerepair__tablet
+msgid "Tablet"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "Tel.:"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "Tel:809-274-2666<br/>"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "Test Funciones"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "Test V."
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "Tornillo"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "Tornillos"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__touch
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "Touch"
+msgstr "Táctil"
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__typerepair
+msgid "Type Repair"
+msgstr "Tipo Equipo"
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "USB/Carga"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "Vencimiento"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "Vencimiento de Garantia"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "WIFI"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__website1
+msgid "Website"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "Website: www.ithesk.com<br/>"
+msgstr ""
+
+#. module: fistrepair
+#: model:ir.model.fields,field_description:fistrepair.field_repair_order__wifi
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "Wifi"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_5
+msgid "_________________<br/>"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder1
+msgid "_____________________________<br/>"
+msgstr ""
+
+#. module: fistrepair
+#: model_terms:ir.ui.view,arch_db:fistrepair.report_repairorder_6
+msgid "faceid"
+msgstr ""

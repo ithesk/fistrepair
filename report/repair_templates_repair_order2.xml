@@ -26,7 +26,7 @@
 
             <div class="circulo">
                 <div class="circuloletra">
-                   <t>A</t> </div>
+                  <span t-field="o.classific"/> </div>
             </div>
     
     
