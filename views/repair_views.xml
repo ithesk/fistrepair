@@ -10,6 +10,7 @@
 
       <field name="description" position="before">
         <field name = "typerepair"/>
+        <field name = "powerstate" widget="boolean_toggle"/>
     </field>  
 
        <field name="partner_id" position="after">
@@ -34,29 +35,29 @@
         <field name="location_id" position="replace" />   <!-- eliminar campos de la vista -->
 
         <field name = "picking_id" position="after"> 
-          <field name = "faceid" />
-            <field name = "signal" />
-            <field name = "wifi" />
-            <field name = "screen" />
-            <field name = "touch" />
-            <field name = "camera" />
-            <field name = "microphone" />
-            <field name = "speaker" />
+          <field name = "faceid" attrs="{'invisible':[('powerstate', '!=', True)]}" />
+            <field name = "signal" attrs="{'invisible':[('powerstate', '!=', True)]}" />
+            <field name = "wifi" attrs="{'invisible':[('powerstate', '!=', True)]}"/>
+            <field name = "screen" attrs="{'invisible':[('powerstate', '!=', True)]}" />
+            <field name = "touch" attrs="{'invisible':[('powerstate', '!=', True)]}" />
+            <field name = "camera" attrs="{'invisible':[('powerstate', '!=', True)]}"/>
+            <field name = "microphone" attrs="{'invisible':[('powerstate', '!=', True)]}" />
+            <field name = "speaker" attrs="{'invisible':[('powerstate', '!=', True)]}" />
         </field>
 
         <field name = "tag_ids" position="after"> 
             <field name = "evaluation" decoration-warning="evaluation == '1/10 Maco'" decoration-success="evaluation == '10/10 NITIDO'" />
-            <field name = "battery"/>
-            <field name = "battery" widget="percentpie"/>
-            <field name = "charging" />
-            <field name = "buttons" />
-            <field name = "panic" />
+            <field name = "battery" attrs="{'invisible':[('powerstate', '!=', True)]}" />
+            <field name = "battery" widget="percentpie"  attrs="{'invisible':[('powerstate', '!=', True)]}"/>
+            <field name = "charging" attrs="{'invisible':[('powerstate', '!=', True)]}" />
+            <field name = "buttons" attrs="{'invisible':[('powerstate', '!=', True)]}" />
+            <field name = "panic" attrs="{'invisible':[('powerstate', '!=', True)]}" />
             <field name = "screw" />
-            <field name = "earphone" />
+            <field name = "earphone" attrs="{'invisible':[('powerstate', '!=', True)]}" />
             <field name = "sim" />
-            <field name = "flash" />
-            <field name = "camerafront" />
-            <field name = "statecell"/>
+            <field name = "flash" attrs="{'invisible':[('powerstate', '!=', True)]}" />
+            <field name = "camerafront" attrs="{'invisible':[('powerstate', '!=', True)]}" />
+            <field name = "statecell" attrs="{'invisible':[('powerstate', '!=', True)]}" />
     </field>
 
     </field>

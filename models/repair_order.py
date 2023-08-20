@@ -27,6 +27,7 @@ class RepairP(models.Model):
     screw = fields.Boolean(string='Screw')
     earphone = fields.Boolean(string='Earphone')
     flash = fields.Boolean(string='Flash')
+    powerstate = fields.Boolean(string='Power State')
 
     partner1_phone = fields.Char(string='Phone', related='partner_id.phone')
     company_phone = fields.Char(string='Phone', related='company_id.phone')
@@ -88,9 +89,10 @@ class RepairP(models.Model):
                 record.evaluation = "5/10 HAY"
             elif sum >= 5:
                 record.evaluation = "3/10 REGULAR"
-            else:
+            elif sum >= 1:
                 record.evaluation = "1/10 Maco"
-        
+            else: 
+                record.evaluation = "No Probado"
     
     
     @api.depends('typerepair')
